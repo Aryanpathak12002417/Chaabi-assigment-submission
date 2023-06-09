@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Touch Typing Practice</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  font-size: 24px;
+}
+
+#instruction {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#textInput {
+  width: 400px;
+  height: 80px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#resetBtn {
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+</style>
+<body>
+  <div id="app">
+    <h1>Touch Typing Practice</h1>
+    <div id="keyboard">
+      <div class="row">
+        <button class="key">A</button>
+        <button class="key">S</button>
+        <button class="key">D</button>
+        <button class="key">F</button>
+      </div>
+      <div class="row">
+        <button class="key">J</button>
+        <button class="key">K</button>
+        <button class="key">L</button>
+        <button class="key">;</button>
+      </div>
+    </div>
+    <p id="instruction">Start typing the keys:</p>
+    <textarea id="textInput" rows="3" autofocus></textarea>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <script>
+    // Get the elements
+const textInput = document.getElementById('textInput');
+const keys = document.getElementsByClassName('key');
+const resetBtn = document.getElementById('resetBtn');
+
+// Add event listeners
+textInput.addEventListener('input', handleInput);
+resetBtn.addEventListener('click', reset);
+
+// Store the expected keys to type
+const expectedKeys = ['A', 'S', 'D', 'F', 'J', 'K', 'L', ';'];
+let currentIndex = 0;
+
+function handleInput() {
+  const typedKey = textInput.value.charAt(textInput.value.length - 1).toUpperCase();
+  
+  // Check if the typed key matches the expected key
+  if (typedKey === expectedKeys[currentIndex]) {
+    keys[currentIndex].classList.add('correct');
+    currentIndex++;
+    
+    // Check if all keys have been typed correctly
+    if (currentIndex === expectedKeys.length) {
+      textInput.value = 'Congratulations! You have typed all the keys correctly.';
+      textInput.disabled = true;
+    }
+  } else {
+    keys[currentIndex].classList.add('incorrect');
+  }
+}
+
+function reset() {
+  currentIndex = 0;
+  textInput.value = '';
+  textInput.disabled = false;
+  
+  // Reset
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    font-family: 'Open Sans', sans-serif;
+}
+.left-details{
+    margin-right: 2vw;
+}
+.brand-guider{
+    min-width: 2px;
+    max-width: 2px;
+    min-height: 15px;
+    min-height: 15px;
+    background-color: white;
+}

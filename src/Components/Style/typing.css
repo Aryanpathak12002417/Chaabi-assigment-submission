@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+.typing{
+    min-width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+input{
+    margin-top: 5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    outline: none;
+    border: 2px solid blue;
+    min-width: 50vw;
+    max-width: 50vw;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.typing-title{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-bottom: 2vh;
+    font-size: 35px;
+
+}
+.textbox{
+    background-color: #529aa8;
+    padding: 20px 30px;
+    text-align: center;
+    color: white;
+    min-width: 50vw;
+    max-width: 50vw;
+    border-radius: 5px;
+}
+.note-box{
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.white-color-text{
+    transition: all 0.2s;
+    background-color: white;
+}
+.red-color-text{
+    background-color: #df1f11b5;
+    transition: all 0.2s
+}
+.keybord{
+    max-width: 100%;
+    max-height: 30vh;
+    font-family: 'Lato', sans-serif;
+    transition: .2s;
+    font-size: 15px;
+}
