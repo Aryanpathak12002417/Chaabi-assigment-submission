@@ -3,7 +3,7 @@
 
 ## Depoly Site Link 🚀
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://dapper-hamster-eed8c0.netlify.app/](https://dapper-hamster-eed8c0.netlify.app/) to view it in your browser.
 
 ## About The Site 📑
 
