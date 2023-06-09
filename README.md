@@ -7,13 +7,13 @@ Open [https://dapper-hamster-eed8c0.netlify.app/](https://dapper-hamster-eed8c0.
 
 ## About The Site 📑
 
-The Name of the site is Touch Typing. This website only focous on 8 key(mentioned in the assigmnet).
-It Help user to increase his typing speed by thrwing new word every time. It measures users accuracy,
+The Name of the site is Touch Typing. This website only focus on 8 key(mentioned in the assigmnet).
+It Help user to increase his typing speed by throwing new word every time. It measures users accuracy,
 word-per-minute and key-per-5 miniutes
 
 ## Components
 
-Below Are The Component used
+Below are the Component used
 
 ### `Typing`
 
